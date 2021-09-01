@@ -90,15 +90,33 @@
 }
 
 /*changes the background color of the headers sections of accordion class (Bootstrap)  */
-.overridecardheader{
-  background-color: #333;
+.overrideheader{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: #333;
 }
+
 /*changes color and font for accrodion */
-.overridecardheader a{
+.accordion-button{
   font-size: 20px;
   color: white;
   background-color: #333;
 }
+
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed) {
+  font-size: 20px;
+  color: white;
+  background-color: #333;
+}
+
 /*adds border to ul in accordion*/
 .accord ul{
   list-style-type: square;
