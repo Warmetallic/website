@@ -10,8 +10,7 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
       {% load static %}
       <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet">  
-<!--       <link href="/static/style.css" type="text/css" rel="stylesheet">  --> 
-      <script src="/js/angryface.js"></script>
+      <!--       <link href="/static/style.css" type="text/css" rel="stylesheet">  --> 
       <title>Home</title>
     </head>
     <body>
@@ -35,23 +34,34 @@
           </li>
         </ul>
       </nav>
-      {% block content %}
-      {% endblock %}
 
-
-  <!--Footer-->
-    <footer>
-      <div class="jumbotron text-center footer" style="margin-bottom:0">
-        <p>Gleb Kharlamov</p>
+      <div>
+        <audio id="audio">
+          <source src="{% static 'sounds/sun.mp3' %}" type="audio/mpeg">
+        </audio>
+          <button id="playPauseBTN" onclick="playPause()">Play &#9658</button>
+          <button onclick="stop()">Stop &#9611</button>
       </div>
-    </footer>
 
-      <!-- Optional JavaScript; choose one of the two! -->
-
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-    </html>
+        {% block content %}
+        {% endblock %}
 
 
-    <!-- elements used and adapted in the above page from https://getbootstrap.com/ --> 
+        <!--Footer-->
+        <footer>
+          <div class="jumbotron text-center footer" style="margin-bottom:0">
+            <p>Gleb Kharlamov</p>
+          </div>
+        </footer>
+
+        <script src="{% static 'js/angryface.js' %}"></script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </body>
+      </html>
+
+
+      <!-- elements used and adapted in the above page from https://getbootstrap.com/ --> 
