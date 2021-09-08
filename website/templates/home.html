@@ -99,73 +99,27 @@
 
 <!--Gallery of images/ Bootsrap Carousel-->
 <div class="container pt-3 my-3">
-  <div class="row">
-    <div class="col"><h1 class="text-center" style="font-family: 'Courier New', Courier, monospace;">Hobbies and Interests</h1></div>
-  </div>
-  <div class="row">
-
-    <div id="gallery" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#gallery" data-slide-to="0" class="active"></li>
-        <li data-target="#gallery" data-slide-to="1"></li>
-        <li data-target="#gallery" data-slide-to="2"></li>
-        <li data-target="#gallery" data-slide-to="3"></li>
-        <li data-target="#gallery" data-slide-to="4"></li>
-        <li data-target="#gallery" data-slide-to="5"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/sport2.jpg" alt="Snowboard" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Sports</h3>
-            <p>Snowboarding</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="img/IMG_2032 (1).jpg" alt="Golf1" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Sports</h3>
-            <p>Golf</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="img/IMG_4507.jpg" alt="Golf2" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Sports</h3>
-            <p>Golf</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="img/IMG_3936 (2).jpg" alt="Cyprus" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Travelling</h3>
-            <p>Cyprus</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="img/IMG_2437.JPG" alt="Amsterdam" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Travelling</h3>
-            <p>Amsterdam</p>
-          </div>   
-        </div>
-        <div class="carousel-item">
-          <img src="img/IMG_2833.jpg" alt="Tattoos" width="1100" height="800">
-          <div class="carousel-caption">
-            <h3>Tattoos</h3>
-            <p>A++Void</p>
-          </div>   
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#gallery" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#gallery" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+     {% for i in images%}
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter0}}" class="{% if forloop.counter0 == 0 %} active {%endif%}" aria-current="true" aria-label="Slide 1"></button>
+     {% endfor %}
+   </div>
+   <div class="carousel-inner">
+    {% for i in images%}
+    <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+      <img class="d-block w-100" src="{{i.image.url}}" alt="Second slide">
     </div>
-
+    {% endfor %}
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
+</div>
 </div>
 {% endblock %}
