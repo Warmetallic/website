@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = 'AKIAZSRGGY2T2EFPLFHV'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'msc-project'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_ADDRESSING_STYLE = "virtual"
+AWS_S3_HOST = "s3.eu-west-2.amazonaws.com"
+AWS_S3_REGION_NAME="eu-west-2"
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
