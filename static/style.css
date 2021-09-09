@@ -5,7 +5,7 @@ body{
     background-image: url(/static/img/hand.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 50% 450px;
+    background-position: 50% 660px;
 }
 
 
@@ -14,7 +14,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.maincontainer{
+.tentacle{
   background-image: url(/static/img/tentacle7.png);  
   background-repeat: no-repeat;
   background-size: 20%;
@@ -99,7 +99,7 @@ body{
 
 /*modified p  */
 .overridep{
-  padding: 20px 10px 10px 10px;
+  padding: 20px 30px 20px 30px;
   margin-top: 50px;
   margin-bottom: 80px;
   border: solid 2px black;
@@ -117,6 +117,7 @@ body{
   text-shadow: 3px 3px 4px #FF0000;
 }
 
+/*Welcome title on the home page */
 .welcome{
   padding-top: 20px;
   margin-top: 20px;
@@ -126,6 +127,12 @@ body{
   text-align: center;
   color: black;
   -webkit-text-stroke: 0.5px white;
+}
+/*The first paraghaph on the home page*/
+.welcomePar{
+  margin: -15px ;
+  text-align: center;
+  background-color: white;
 }
 
 /*changes color and font for accrodion */
@@ -156,20 +163,58 @@ body{
     box-shadow: 0 0 0 0.2rem #e730307a;
 }
 
+
+/*adds images to Aberdeen part and changes the layout*/
+.gradesAberdeen {
+  background-image: url(/static/img/aberdeen.png);
+  background-size: 21%;
+  background-repeat: no-repeat;
+  background-position: 90% 60%;
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 100px;
+  justify-content: left;
+}
+
+/*adds images to City part and changes the layout*/
+.gradesCity {
+  background-image: url(/static/img/city.png);
+  background-repeat: no-repeat;
+  background-position: 105% 0%;
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 50px;
+  justify-content: left;
+}
+
+
+.grades {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  grid-gap: 200px;
+  justify-content: left;
+}
+
+
 /*adds border to ul in accordion*/
-.accord ul{
+.accordTitles{
   list-style-type: square;
   border-left: 5px solid grey;
   font-size: 20px;
-}
-/*adjusts position of li in accrodion*/
-.accord li{
   margin: 5px;
 }
+
+.accordGrades{
+  list-style-type: none;
+  font-size: 20px;
+  margin: 5px;
+}
+
 /*adjusts margin in accrodion*/
 .accordmargin{
 margin-bottom: 80px;
 }
+
 /*adjsuts margin and adds border to another Bootstrap class carousel  */
 .carousel{
 margin-bottom: 90px;
