@@ -9,15 +9,23 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
       {% load static %}
-      <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet">  
-      <!--       <link href="/static/style.css" type="text/css" rel="stylesheet">  --> 
+      <!-- <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet">   -->
+      <link href="/static/style.css" type="text/css" rel="stylesheet">  
       <title>Home</title>
     </head>
     <body>
       <!--Header-->
       <header class="jumbotron override">
+                <div>
+        <audio id="audio">
+          <source src="{% static 'sounds/mm.mp3' %}" type="audio/mpeg">
+        </audio>
+          <button id="playPauseBTN" onclick="playPause()">Play &#9658</button>
+          <button onclick="stop()">Stop &#9611</button>
+      </div>
         <h1>Gleb Kharlamov</h1>
-        <p>Personal webiste</p> 
+        <p>Personal webiste</p>
+
       </header>
       <!--Navigation panel-->
       <nav class="navbar navbar-expand-sm sticky-top nav">
@@ -34,22 +42,14 @@
           </li>
         </ul>
       </nav>
-
-      <div>
-        <audio id="audio">
-          <source src="{% static 'sounds/mm.mp3' %}" type="audio/mpeg">
-        </audio>
-          <button id="playPauseBTN" onclick="playPause()">Play &#9658</button>
-          <button onclick="stop()">Stop &#9611</button>
-      </div>
-
+      <div class="maincontainer">
         {% block content %}
         {% endblock %}
-
+      </div>
 
         <!--Footer-->
         <footer>
-          <div class="jumbotron text-center footer" style="margin-bottom:0">
+          <div class="jumbotron text-center footer">
             <p>Gleb Kharlamov</p>
           </div>
         </footer>
