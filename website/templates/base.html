@@ -16,36 +16,35 @@
     <body>
       <!--Header-->
       <header class="jumbotron override">
-                <div>
-        <audio id="audio">
-          <source src="{% static 'sounds/mm.mp3' %}" type="audio/mpeg">
-        </audio>
-          <button id="playPauseBTN" onclick="playPause()">Play &#9658</button>
-          <button onclick="stop()">Stop &#9611</button>
-      </div>
-        <h1>Gleb Kharlamov</h1>
-        <p>Personal webiste</p>
-
-      </header>
-      <!--Navigation panel-->
-      <nav class="navbar navbar-expand-sm sticky-top nav">
-        <a id="face" class="navbar-brand" href="#"><img src="{% static 'img/face4.png' %}" alt="logo" width="30" height="35"></a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">Development</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="chat.html">Chat</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="maincontainer">
-        {% block content %}
-        {% endblock %}
-      </div>
+        <div>
+          <audio id="audio">
+            <source src="{% static 'sounds/mm.mp3' %}" type="audio/mpeg">
+            </audio>
+            <button id="playPauseBTN" onclick="playPause()">Play &#127911</button>
+            <button id="stopBTN"onclick="stop()">Stop &#128162</button>
+          </div>
+          <h1>Gleb Kharlamov</h1>
+          <p>Personal webiste</p>
+        </header>
+        <!--Navigation panel-->
+        <nav class="navbar navbar-expand-sm sticky-top nav">
+          <a id="face" class="navbar-brand" href="#"><img src="{% static 'img/face4.png' %}" alt="logo" width="30" height="35"></a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chat.html">Chat</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="maincontainer">
+          {% block content %}
+          {% endblock %}
+        </div>
 
         <!--Footer-->
         <footer>
@@ -56,9 +55,7 @@
 
         <script src="{% static 'js/angryface.js' %}"></script>
 
-        <script>
-          
-        </script>
+        <script src="/static/js/angryface.js"></script>
 
         <!-- Optional JavaScript; choose one of the two! -->
 

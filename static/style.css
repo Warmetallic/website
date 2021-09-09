@@ -14,6 +14,13 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.maincontainer{
+  background-image: url(/static/img/tentacle7.png);  
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 110% 0px;
+}
+
 
 /* navigation bar */
 .nav {
@@ -65,7 +72,7 @@ body{
   background-color: white;
   background-image: url(/static/img/face.png);
   background-size: 60px;
-  background-position: 50% 99%;
+  background-position: 50% 97%;
   background-repeat: no-repeat;
   color: black;
 }
@@ -102,9 +109,23 @@ body{
 /*changes the background color of the headers sections of accordion class (Bootstrap)  */
 .overrideheader{
   font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: bold;
   text-align: center;
-  color: #333;
-  -webkit-text-stroke: 0.1px white;
+  color: white;
+  -webkit-text-stroke: 2.7px black;
+  text-shadow: 3px 3px 4px #FF0000;
+}
+
+.welcome{
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 0.5px white;
 }
 
 /*changes color and font for accrodion */
@@ -255,4 +276,18 @@ color: red;
 .buttonstyle{
   margin-left: 200px;
   margin-bottom: 200px;
+}
+
+#playPauseBTN{
+  background-color: black;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+#stopBTN{
+  background-color: black;
+  color: white;
+  border: 2px solid red;
+  border-radius: 5px;
 }
