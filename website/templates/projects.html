@@ -4,30 +4,27 @@
 {% block content %}
 {% load static %}
 <!--Introduction section-->
+<div class="tentacle">
 <div class="container">
   <div class="row">
     <div class="col"><h1 class="welcome">Projects</h1></div>
   </div>
-  <div class="row">
-    <div class="col overridep">
-      <p class="welcomePar">Thank you for visiting the website.<br> My name is Gleb Kharlamov, and this is my portfolio. Here you can see my qualifications and projects. In addition, photos, videos and hobbies are also presented. So you can know me a bit better. I just finished my MSc in IT at the University of Aberdeen and looking forward to work as a junior developer. I am passioned about the web development and worked on numerous projects during my studies. Made a banch of Java, Python and C++ applications. Moreover, I am keen on game development. A few games made by me can be seen on the Projects page. This website itself can be considered as one of the projects, since it built from a scratch with various technologies. In the future, more works will be published here.<br>Enjoy!</p>
+      <div class="p-5 mb-4 bg-light border rounded-3">
+        <p class=" welcomePar overridep">On this page, you can find my projects. It starts with the university works and leads to games with media resources. The content is regularly growing and changing to show my latests results.</p>
     </div>
   </div>
-</div>
 
-    <div class="container">
+  <div class="container">
     <!-- START THE FEATURETTES -->
-
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <h2 class="featurette-heading">Portfolio. <span class="text-muted">The personal website.</span></h2>
         <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="{% static 'img/web.jpg'%}" class="img-thumbnail" alt="web">
       </div>
     </div>
 
@@ -35,25 +32,11 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <h2 class="featurette-heading">MSc Project. <span class="text-muted">The summer project during the studies in Aberdeen.</span></h2>
         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img src="{% static 'img/aberdeen.png'%}" class="img-thumbnail" alt="web">
       </div>
     </div>
 
@@ -63,5 +46,5 @@
 
   </div><!-- /.container -->
 
-
+</div>
 {% endblock %}
