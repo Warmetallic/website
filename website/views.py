@@ -6,3 +6,6 @@ from .models import Image
 def home(request):
     images = Image.objects.all()
     return render(request, 'home.html', {'images': images})
+
+def projects(request):
+    return render(request, 'projects.html', {})
