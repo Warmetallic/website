@@ -427,10 +427,9 @@ color: red;
     grid-gap: 100px;
     background-color: white;
     justify-content: center;
-  }
+}
 
-  .card-img-top {
-    width: 100%; /* You can set the dimensions to whatever you want */
-    object-fit: cover;
 
-  }
+.gameIng{
+  max-height: 700px;
+}
