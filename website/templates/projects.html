@@ -5,12 +5,12 @@
 {% load static %}
 <!--Introduction section-->
 <div class="tentacle">
-<div class="container">
-  <div class="row">
-    <div class="col"><h1 class="welcome">Projects</h1></div>
-  </div>
-      <div class="p-5 mb-4 bg-light border rounded-3">
-        <p class=" welcomePar overridep">On this page, you can find my projects. It starts with the university works and leads to games with media resources. The content is regularly growing and changing to show my latests results.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col"><h1 class="welcome">Projects</h1></div>
+    </div>
+    <div class="p-5 mb-4 bg-light border rounded-3">
+      <p class=" welcomePar overridep">On this page, you can find my projects. It starts with the university works and leads to games with media resources. The content is regularly growing and changing to show my latests results.</p>
     </div>
   </div>
 
@@ -21,10 +21,24 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Portfolio. <span class="text-muted">The personal website.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <p class="projectp">The website is built from a scratch and it is an excellent example to demonstrate my skills in web development. The tools and technologies used during the development are listed below:</p>
+        <div class="projectul">
+          <ul>
+            <li>Django (Python framework)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Heroku (web hosting)</li>
+            <li>Amazon S3 (web storage)</li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-5">
-        <img src="{% static 'img/web.jpg'%}" class="img-thumbnail" alt="web">
+        <img src="{% static 'img/web2.jpg'%}" class="img-thumbnail" alt="web">
       </div>
     </div>
 
@@ -33,7 +47,8 @@
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">MSc Project. <span class="text-muted">The summer project during the studies in Aberdeen.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <p class="lead">The Greig-Duncan folk song collection - is a collection of tradition and local music from the northeast of Scotland collated by Gavin Greig and Rev. James Bruce Duncan. As part of the MSc in Information Technology at the University of Aberdeen I had the project of creating a web application prototype to house, view and retrieve songs from the collection. This digitised version of the collection would allow scholars and enthusiasts to view the resource more easily. Dr Thomas McKean of the University of Aberdeen was the product owner. He wanted to create this application to improve access to the collection. Dr McKean had a vision of an intuitive and clear application prototype that catered to two key things - viewing and searching the Song Collection. </p>
+        <a class="msclink" href="https://gleb-kharlamov-msc-project.herokuapp.com/">The MSc Project's link</a>
       </div>
       <div class="col-md-5 order-md-1">
         <img src="{% static 'img/aberdeen.png'%}" class="img-thumbnail" alt="web">
