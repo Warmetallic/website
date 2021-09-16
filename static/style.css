@@ -383,7 +383,7 @@ color: red;
   }
 }
 
-
+/*section for projects page*/
 .projectul{
   display: grid;
   grid-template-columns:auto auto;
@@ -406,7 +406,7 @@ color: red;
 .msclink{
   font-size: 25px;
   color: red;
-  text-decoration: underline;
+  text-decoration: none;
 
 }
 
@@ -415,3 +415,22 @@ color: red;
   color: black;
   
 }
+
+.projectcontainer{
+  max-width: 1800px;
+}
+
+/*games container*/
+.grid-container {
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-gap: 100px;
+    background-color: white;
+    justify-content: center;
+  }
+
+  .card-img-top {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    object-fit: cover;
+
+  }

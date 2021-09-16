@@ -10,7 +10,7 @@
       <div class="col"><h1 class="welcome">Projects</h1></div>
     </div>
     <div class="p-5 mb-4 bg-light border rounded-3">
-      <p class=" welcomePar overridep">On this page, you can find my projects. It starts with the university works and leads to games with media resources. The content is regularly growing and changing to show my latests results.</p>
+      <p class=" welcomePar overridep">On this page, you can find my projects. It starts with the university works and leads to <a class="msclink" href="#games">games</a> with media resources. The content is regularly growing and changing to show my latests results.</p>
     </div>
   </div>
 
@@ -60,6 +60,26 @@
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
+
+  <div class="container projectcontainer">
+    <div class="row">
+      <div id="games" class="col"><h1 class="overrideheader">Games</h1></div>
+    </div>
+    <div class="grid-container">
+    {% for game in games %}
+    <div class="card">
+      <img class="card-img-top gameImg" src="{{game.gameImage.url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title limitText">{{game.gameName}}</h5>
+        <p class="card-text limitText"> Authors: {{game.gameDescription}} </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  </div>
+
+
+
 
 </div>
 {% endblock %}

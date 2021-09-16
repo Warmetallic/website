@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Image
+from .models import Image, Games
 
 
 # Create your views here.
@@ -8,4 +8,5 @@ def home(request):
     return render(request, 'home.html', {'images': images})
 
 def projects(request):
-    return render(request, 'projects.html', {})
+    games = Games.objects.all()
+    return render(request, 'projects.html', {'games': games})
