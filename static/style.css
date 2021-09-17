@@ -108,6 +108,16 @@
   font-size: 20px;
 }
 
+/*modified p  */
+.overridepprojects{
+  text-align: center;
+  padding: 20px 30px 20px 30px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border: solid 2px black;
+  font-size: 25px;
+}
+
 /*changes the background color of the headers sections of accordion class (Bootstrap)  */
 .overrideheader{
   font-family: 'Courier New', Courier, monospace;
