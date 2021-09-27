@@ -10,3 +10,6 @@ def home(request):
 def projects(request):
     games = Games.objects.all()
     return render(request, 'projects.html', {'games': games})
+
+def recommendations(request):
+    return render(request, 'recommendations.html', {})
