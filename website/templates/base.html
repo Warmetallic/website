@@ -13,6 +13,7 @@
       <meta name="title" property="og:title" content="Portfolio" />
       <meta property="og:type" content="Website" />
       <meta name="image" property="og:image" content="{% static 'img/hand.png' %}" />
+      <meta property='og:image' content="{% static 'img/hand.png' %}"/>
       <meta name="description" property="og:description" content="Personal Website" /><meta name="author" content="Gleb Kharlamov" />
       <!-- <link href="{% static 'style.css' %}" type="text/css" rel="stylesheet">   -->
       <link href="/static/style.css" type="text/css" rel="stylesheet">  
@@ -32,7 +33,7 @@
           <p>Personal webiste</p>
         </header>
         <!--Navigation panel-->
-        <nav class="navbar navbar-expand-sm sticky-top nav">
+        <nav id="nav" class="navbar navbar-expand-sm sticky-top">
           <a id="face" class="navbar-brand" href="#"><img src="{% static 'img/face4.png' %}" alt="logo" width="30" height="35"></a>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -58,9 +59,11 @@
           </div>
         </footer> 
 
-        <script src="{% static 'js/angryface.js' %}"></script>
+<!--         <script src="{% static 'js/angryface.js' %}"></script> -->
 
         <script src="/static/js/angryface.js"></script>
+
+        <script src="/static/js/rec.js"></script>
 
         <!-- Optional JavaScript; choose one of the two! -->
 

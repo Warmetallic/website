@@ -4,6 +4,42 @@
 {% block content %}
 {% load static %}
 
+<div>
+	<div class="container">
+		<div class="row">
+			<div class="col"><h1 class="welcome">Recommendations</h1></div>
+		</div>
+		<div class="p-5 mb-4 bg-light border rounded-3">
+			<p class=" welcomePar overridep">The section contains recomdendations from respectful people who had a chance to work with me. Also, this section has certificates from W3Schools.</p>
+		</div>
+	</div>
 
+	<div class="container">
+		<!-- START THE FEATURETTES -->
+		<hr class="featurette-divider">
 
-{% endblock %}
+		<!-- /END THE FEATURETTES -->
+
+	</div><!-- /.container -->
+
+	<div class="container projectcontainer">
+		<div class="grid-container p-5 mb-4 bg-light border rounded-3">
+			<!-- Trigger the Modal -->
+			<img id="myImg" src="{% static 'img/rec.jpg' %}" alt="The recomdendation letter by Dr Scharlau" style="width:100%;max-width:400px">
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01">
+
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
+			</div>
+
+		</div>
+	</div>
+	{% endblock %}
