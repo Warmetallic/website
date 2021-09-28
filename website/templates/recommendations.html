@@ -22,12 +22,35 @@
 
 	</div><!-- /.container -->
 
-	<div class="container projectcontainer">
+	<div class="container">
 		<div class="grid-container p-5 mb-4 bg-light border rounded-3">
-			<!-- Trigger the Modal -->
-			<img id="myImg" src="{% static 'img/rec.jpg' %}" alt="The recomdendation letter by Dr Scharlau" style="width:100%;max-width:400px">
+			 <div class="card reccard">
+      		 <img id="myImg" class="myImg" src="{% static 'img/rec.jpg' %}" alt="The recomdendation letter from Dr Scharlau">
+		      <div class="card-body">
+		        <h5 class="card-title limitText"><strong>University of Aberdeen</strong></h5>
+		        <p class="card-text limitText lead"> The recommendation letter from Dr Scharla (Senior Lecturer)</p>
+		      </div>
+    		</div>
+    		<div class="card reccard">
+      		 <img id="myImg2" class="myImg" src="{% static 'img/html.jpg' %}" alt="The certificate from W3Schools">
+		      <div class="card-body">
+		        <h5 class="card-title limitText"><strong>Certified HTML Developer</strong></h5>
+		        <p class="card-text limitText lead"> The certificate of complition from W3Schools in HTML</p>
+		      </div>
+    		</div>
+    		<div class="card reccard">
+      		 <img id="myImg3" class="myImg" src="{% static 'img/css.jpg' %}" alt="The certificate from W3Schools">
+		      <div class="card-body">
+		        <h5 class="card-title limitText"><strong>Certified CSS Developer</strong></h5>
+		        <p class="card-text limitText lead"> The certificate of complition from W3Schools in CSS</p>
+		      </div>
+    		</div>
+		</div>
+	</div>
+</div>
 
-			<!-- The Modal -->
+
+				<!-- The Modal -->
 			<div id="myModal" class="modal">
 
 				<!-- The Close Button -->
@@ -36,10 +59,24 @@
 				<!-- Modal Content (The Image) -->
 				<img class="modal-content" id="img01">
 
-				<!-- Modal Caption (Image Text) -->
-				<div id="caption"></div>
 			</div>
 
-		</div>
-	</div>
+			<div id="myModal2" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img02">
+
+			</div>
+			<div id="myModal3" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img03">
+
+			</div>
 	{% endblock %}
