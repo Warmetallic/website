@@ -1,6 +1,8 @@
 {% load static %}
 
 
+
+
 #hand{
     background-image: url(/static/img/hand.png);
     background-repeat: no-repeat;
@@ -66,6 +68,7 @@
   from {background-color: white; color: black; background-image: url(/static/img/face.png);}
   to {background-color: black; color: white; background-image: url(/static/img/face4.png);}
 }
+
 
 /*modified jumborton class (header)  */
 .override{
@@ -472,6 +475,7 @@ color: red;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-bottom: 200px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -535,6 +539,51 @@ color: red;
 .reccard img {
   max-height:307px;
 }
+
+
+
+/* The animation code */
+@keyframes saw {
+/*   0%  {transform: rotate(0deg);  right:100px;}
+  25%  {transform: rotate(360deg); right:450px;}
+  50%  {transform: rotate(720deg); right:750px;}
+  75%  {transform: rotate(1080deg); right:1100px;}
+  100% {transform: rotate(1440deg); right:1500px;}*/
+  to {transform: rotate(1400deg); right:1300px;}
+}
+
+@keyframes move {
+ to   {transform: left:0px; top:0px;}
+}
+
+/* SPINNER JUST FOR DEMO */
+#saw {
+  position: absolute;
+  right: 200px;
+  bottom: 50px;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  animation-name: saw;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;;
+/*  animation: rotate 10.5s alternate infinite; */
+  background: url(/static/img/saw.png) no-repeat center;
+  background-size: 100%;
+
+}
+
+#saw background {
+  z-index: -1;
+  animation: rotate 1.5s linear infinite; 
+}
+
+
 
 /*for the future imgs use absolute instead of background*/
 /*
