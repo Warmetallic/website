@@ -46,11 +46,10 @@
               <a class="nav-link" href="{% url 'recommendations' %}">Recommendations</a>
             </li>
           </ul>
-        </nav>
+        </nav>  
 
           {% block content %}
           {% endblock %}
-
 
         <!--Footer-->
         <footer>
@@ -58,6 +57,9 @@
             <p>Gleb Kharlamov</p>
           </div>
         </footer> 
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><div>&#8657;<div></button>
+
 
 <!--         <script src="{% static 'js/angryface.js' %}"></script> -->
 
@@ -68,6 +70,8 @@
         <script src="/static/js/rec2.js"></script>
 
         <script src="/static/js/rec3.js"></script>
+
+        <script src="/static/js/scrollbutton.js"></script>
 
         <!-- Optional JavaScript; choose one of the two! -->
 

@@ -255,6 +255,33 @@ font-family: 'Courier New', Courier, monospace;
 font-size: 30px;
 color: white; 
 }
+
+#myBtn {
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 44px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  color: white;
+}
+
+
+
+
 /*below section related to the table and its elements */
 table {
 border-collapse: collapse;
@@ -523,13 +550,6 @@ color: red;
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 
 .reccard {
   width:100%;
@@ -552,11 +572,7 @@ color: red;
   to {transform: rotate(1400deg); right:1300px;}
 }
 
-@keyframes move {
- to   {transform: left:0px; top:0px;}
-}
-
-/* SPINNER JUST FOR DEMO */
+/* SPINNER FOR SAW*/
 #saw {
   position: absolute;
   right: 200px;
