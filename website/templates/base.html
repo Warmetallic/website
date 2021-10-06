@@ -34,7 +34,7 @@
         </header>
         <!--Navigation panel-->
         <nav id="nav" class="navbar navbar-expand-sm sticky-top">
-          <a id="face" class="navbar-brand" href="#"><img src="{% static 'img/face4.png' %}" alt="logo" width="30" height="35"></a>
+          <a id="face" class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'img/face4.png' %}" alt="logo" width="30" height="35"></a>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="{% url 'home' %}">Home</a>
