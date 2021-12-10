@@ -8,10 +8,10 @@
 	<div id="saw"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col"><h1 class="welcome">Recommendations</h1></div>
+			<div class="col"><h1 class="welcome">Certificates</h1></div>
 		</div>
 		<div class="p-5 mb-4 bg-light border rounded-3">
-			<p class=" welcomePar overridep">The section contains recomdendations from respectful people with who I had a chance to study or work. Also, this section has certificates from W3Schools. It is possible to open the documents by clicking on them.</p>
+			<p class=" welcomePar overridep">The section contains finished courses with certificates from W3Schools. I completed the courses during my free time to obtain needed knowledge and skills. It is possible to open the certificate by clicking on it. More to come!</p>
 		</div>
 	</div>
 
@@ -23,61 +23,72 @@
 
 	</div><!-- /.container -->
 
+
+<!-- 	<div class="container projectcontainer">
+		<div class="row">
+			<div id="games" class="col"><h1 class="overrideheader">Games</h1></div>
+		</div>
+		<div class="grid-container p-5 mb-4 bg-light border rounded-3">
+			{% for game in games %}
+			<div class="card">
+				<img class="gameIng" src="{{game.gameImage.url}}" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title limitText"><strong>{{game.gameName}}</strong></h5>
+					<p class="card-text limitText lead"> {{game.gameDescription}} </p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div> -->
+
 	<div class="container">
 		<div class="grid-container p-5 mb-4 bg-light border rounded-3">
-			 <div class="card reccard">
-      		 <img id="myImg" class="myImg" src="{% static 'img/rec.jpg' %}" alt="The recomdendation letter from Dr Scharlau">
-		      <div class="card-body">
-		        <h5 class="card-title limitText"><strong>University of Aberdeen</strong></h5>
-		        <p class="card-text limitText lead"> The recommendation letter from Dr Scharlau (Senior Lecturer)</p>
-		      </div>
-    		</div>
-    		<div class="card reccard">
-      		 <img id="myImg2" class="myImg" src="{% static 'img/html.jpg' %}" alt="The certificate from W3Schools">
-		      <div class="card-body">
-		        <h5 class="card-title limitText"><strong>Certified HTML Developer</strong></h5>
-		        <p class="card-text limitText lead"> The certificate of complition from W3Schools in HTML</p>
-		      </div>
-    		</div>
-    		<div class="card reccard">
-      		 <img id="myImg3" class="myImg" src="{% static 'img/css.jpg' %}" alt="The certificate from W3Schools">
-		      <div class="card-body">
-		        <h5 class="card-title limitText"><strong>Certified CSS Developer</strong></h5>
-		        <p class="card-text limitText lead"> The certificate of complition from W3Schools in CSS</p>
-		      </div>
-    		</div>
+			<div class="card reccard">
+				<img id="myImg2" class="myImg" src="{% static 'img/html.jpg' %}" alt="The certificate from W3Schools">
+				<div class="card-body">
+					<h5 class="card-title limitText"><strong>Certified HTML Developer</strong></h5>
+					<p class="card-text limitText lead"> The certificate of complition from W3Schools in HTML</p>
+				</div>
+			</div>
+			<div class="card reccard">
+				<img id="myImg3" class="myImg" src="{% static 'img/css.jpg' %}" alt="The certificate from W3Schools">
+				<div class="card-body">
+					<h5 class="card-title limitText"><strong>Certified CSS Developer</strong></h5>
+					<p class="card-text limitText lead"> The certificate of complition from W3Schools in CSS</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 
-				<!-- The Modal -->
-			<div id="myModal" class="modal">
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-				<!-- The Close Button -->
-				<span class="close">&times;</span>
+	<!-- The Close Button -->
+	<span class="close">&times;</span>
 
-				<!-- Modal Content (The Image) -->
-				<img class="modal-content" id="img01">
+	<!-- Modal Content (The Image) -->
+	<img class="modal-content" id="img01">
 
-			</div>
+</div>
 
-			<div id="myModal2" class="modal">
+<div id="myModal2" class="modal">
 
-				<!-- The Close Button -->
-				<span class="close">&times;</span>
+	<!-- The Close Button -->
+	<span class="close">&times;</span>
 
-				<!-- Modal Content (The Image) -->
-				<img class="modal-content" id="img02">
+	<!-- Modal Content (The Image) -->
+	<img class="modal-content" id="img02">
 
-			</div>
-			<div id="myModal3" class="modal">
+</div>
+<div id="myModal3" class="modal">
 
-				<!-- The Close Button -->
-				<span class="close">&times;</span>
+	<!-- The Close Button -->
+	<span class="close">&times;</span>
 
-				<!-- Modal Content (The Image) -->
-				<img class="modal-content" id="img03">
+	<!-- Modal Content (The Image) -->
+	<img class="modal-content" id="img03">
 
-			</div>
-	{% endblock %}
+</div>
+{% endblock %}
