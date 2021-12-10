@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Image, Games
+from .models import Image, Games, Certificate
 # Register your models here.
 
 class ImageAdmin(admin.StackedInline):
@@ -15,4 +15,11 @@ class GameAdmin(admin.StackedInline):
 
 @admin.register(Games)
 class GameAdmin(admin.ModelAdmin):
+	pass
+
+class CertificateAdmin(admin.StackedInline):
+	model=Certificate
+
+@admin.register(Certificate)
+class CertificateAdmin(admin.ModelAdmin):
 	pass

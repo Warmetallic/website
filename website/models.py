@@ -19,3 +19,14 @@ class Games(models.Model):
 
 	def __str__(self):
 		return f'{self.gameID},{self.gameName},{self.gameDescription},{self.gameImage}'
+
+
+class Certificate(models.Model):
+	certificateID = models.CharField(max_length=30, default="ID")
+	certificateName = models.TextField(default="Name")
+	certificateDescription = models.TextField(default="Description")
+	certificateImage = models.ImageField(upload_to='img')
+
+
+	def __str__(self):
+		return f'{self.certificateID},{self.certificateName},{self.certificateDescription},{self.certificateImage}'
