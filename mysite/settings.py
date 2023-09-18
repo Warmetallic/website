@@ -144,10 +144,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
-
 AWS_ACCESS_KEY_ID = 'AKIAZSRGGY2TTQ5QCO45'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'msc-project'
